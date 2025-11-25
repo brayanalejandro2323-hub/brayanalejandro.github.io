@@ -1,0 +1,388 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cosa {
+    width: 100%;
+    padding: 40px 0;
+    background-color: white;
+}
+
+.pc {
+    font-size: 20px;
+    position: absolute;
+    left: 20px;
+    top: 1px;
+    bottom: 30px;
+}
+
+.inter {
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    left: 490px;
+    top: 1px;
+    bottom: 30px;
+}
+
+.uabcs {
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    left: 1215px;
+    top: 1px;
+    bottom: 30px;
+}
+
+.taco {
+    font-size: 30px;
+    position: absolute;
+    left: 50px;
+    top: 70px;
+    bottom: 30px;
+}
+
+.barco {
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    left: 450px;
+    top: 70px;
+    bottom: 30px;
+}
+
+.techo {
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    left: 580px;
+    top: 70px;
+    bottom: 30px;
+}
+
+.patio {
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    left: 780px;
+    top: 70px;
+    bottom: 30px;
+}
+
+.ropa {
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    left: 950px;
+    top: 70px;
+    bottom: 30px;
+}
+
+.casa {
+    width: 100%;
+    padding: 40px 0;
+    background-color: white;
+}
+
+.perro {
+    width: 100%;
+    background-color: transparent;
+    font-size: 10px;
+    overflow: auto; 
+    position: relative;
+}
+
+.carrusel-pista {
+    display: flex;
+    transition: transform 0.8s ease-in-out; 
+    width: 300%;
+}
+
+.slide {
+    width: 50%;
+    float: left; 
+    height: 400px;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.activo {
+    display: block;
+}
+
+.mitad {
+    object-fit: cover;
+    display: none;
+    width: 50%;
+    float: left;
+    height: 400px; 
+    text-align: center;
+    position: relative; 
+}
+
+.texto-encima {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    width: 80%;
+    z-index: 2; 
+}
+    
+.fort {
+    background-color: #c7c7c7;
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    top: 520px;
+}
+
+.halo {
+    text-align: center;
+    width: 250px;
+    font-size: 20px;
+    position: absolute;
+    left: 250px;
+    top: 45px;
+}
+
+.roblox {
+    text-align: center;
+    width: 250px;
+    font-size: 20px;
+    position: absolute;
+    left: 630px;
+    top: 45px;
+}
+
+.css {
+    text-align: center;
+    width: 250px;
+    font-size: 20px;
+    position: absolute;
+    left: 1000px;
+    top: 45px;
+}
+
+.coca {
+    width: 100%;
+    height: 10%;
+    position: relative;
+    top: 100px;
+    height: 600px;
+}
+
+.mitad1 img {
+    height: 100%;
+    position: absolute; 
+}
+
+.mitad2 img {
+    height: 100%;
+    position: absolute; 
+}
+
+.gato {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.cactus {
+    font-size: 25px;
+    margin-bottom: 30px;
+    position: absolute;
+    top: 430px;
+    left: 35%;
+}
+
+.carro {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.flor {
+    width: 23%;
+    float: left;
+    padding: 10px;
+    background-color: #fff;
+    height: 450px; 
+    text-align: center;
+}
+
+.flor img {
+    height: 70%; 
+    margin-bottom: 10px;
+}
+
+.luz {
+    width: 31.33%;
+    float: left;
+    padding: 10px;
+    background-color: #fff;
+    height: 350px; 
+    text-align: center;
+}
+
+.luna {
+    width: 31.33%;
+    float: left;
+    padding: 10px;
+    background-color: #fff;
+    height: 350px; 
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+.luz img {
+    height: 60%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.luna img {
+    height: 60%;
+    margin-bottom: 10px;
+}
+
+.arbol {
+    width: 48%;
+    float: left;
+    margin: 1%;
+    height: 400px;
+    box-sizing: border-box;
+}
+
+.mesa {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.pillin {
+    width: 100%;
+    height: 100%;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    right: 100px;
+    top: 15px;
+}
+
+
+.mesa img {
+    height: 60%;
+    margin-bottom: 15px;
+}
+
+.cielo {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.tren {
+    width: 100%;
+    float: left;
+    height: 500px;
+    background-color: #888;
+}
+
+.tren img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor {
+    position: relative;
+}
+
+.icono {
+    width: 16%;
+    float: left;
+    margin: 2%;
+    padding: 20px 0;
+    height: 130px;
+    background-color: #e0e0e0;
+    border-radius: 55%;
+    text-align: center;
+}
+
+.pie {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.pie_columna {
+    width: 25%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
+    position: relative;
+    left: 16%;
+}
+
+.pie_columna1 {
+    width: 25%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
+    position: absolute;
+    left: 39%;
+}
+
+.pie_columna2 {
+    width: 25%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
+    position: absolute;
+    left: 55%;
+}
+
+.pie_columna3 {
+    width: 25%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
+    position: absolute;
+    left: 71%;
+}
+
+.pie_columna input {
+    padding: 8px;
+    width: 80%;
+    border: none;
+}

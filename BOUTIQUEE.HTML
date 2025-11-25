@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Boutique</title>
+    <link rel="stylesheet" href="boutiquee.css">
+</head>
+<body>
+    <div class="cosa">
+        <div class="pc">10% off 1st pucharse + Free shipping over Rs 999</div>
+        <div class="inter">Download the HYM App</div>
+        <div class="uabcs">United States (USD $) English</div>
+    </div>
+    <div class="taco">mikado</div>
+    <div class="barco">Inicio</div>
+    <div class="techo">Novedades</div>
+    <div class="patio">Siguiente</div>
+    <div class="ropa">Ver</div>
+    
+    <div class="casa">
+        <div class="perro">
+            <div class="slide" id="slideIzquierda">
+                <img src="2.webp">
+                <div class="texto-encima">With Love to you</div>
+            </div>
+            <div class="slide" id="slideDerecha">
+                <img src="1.jpg">
+                <div class="texto-encima">Wrap up in style</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="fort">
+        <div class="halo">
+        riawiorucwionrhwuiriouawr
+        </div>
+        <div class="roblox">
+        riawiorucwionrhwuiriouawr
+        </div>
+        <div class="css">
+        riawiorucwionrhwuiriouawr
+        </div>
+    </div>
+
+    <script>
+        let intervalo;
+        let parActual = 0;
+
+        const imgIzquierda = document.querySelector('#slideIzquierda img');
+        const imgDerecha = document.querySelector('#slideDerecha img');
+
+        const textoIzquierda = document.querySelector('#slideIzquierda .texto-encima');
+        const textoDerecha = document.querySelector('#slideDerecha .texto-encima');
+
+        const paresDeImagenes = [
+            ['2.webp', 'With Love to you', '1.jpg', 'Wrap up in style'],
+            ['3.webp', 'Nueva Colección 1', '4.jpeg', 'Nueva Colección 2'],
+            ['5.jpg', 'Estilo Urbano', '6.jpg', 'Oferta Limitada']
+        ];
+
+        function actualizarImagenesYTextos() {
+            const par = paresDeImagenes[parActual];
+            
+            imgIzquierda.src = par[0];
+            imgDerecha.src = par[2];
+
+            textoIzquierda.textContent = par[1];
+            textoDerecha.textContent = par[3];
+            
+            parActual = (parActual + 1) % paresDeImagenes.length;
+        }
+
+        function iniciarCarruselIndividual() {
+            intervalo = setInterval(actualizarImagenesYTextos, 3000);
+            actualizarImagenesYTextos();
+        }
+
+        window.onload = iniciarCarruselIndividual;
+    </script>
+
+
+    <div class="casa">
+        <div class="coca"> 
+           <div class="cactus">Let's Make Magic! - Últimas Novedades</div>
+        </div>
+        <div class="carro">
+            <div class="flor">
+                <img src="3.webp">
+                <h3>The Olive Slip-On</h3>
+                <p>Sandalia de cuero orgánico.</p>
+            </div>
+            <div class="flor">
+                <img src="4.jpeg">
+                <h3>The Linen Shirt</h3>
+                <p>Camisa de lino para el verano.</p>
+            </div>
+            <div class="flor">
+                <img src="5.jpg">
+                <h3>The Navy Hoodie</h3>
+                <p>Sudadera casual, 100% algodón.</p>
+            </div>
+            <div class="flor">                
+                <img src="6.jpg">
+                <h3>The Jogger Fit</h3>
+                <p>Pantalón deportivo con estilo.</p>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+    <div class="casa">
+        <div class="carro">
+            <div class="arbol">
+                <div class="pillin"> 
+                    <h2>Ropa de edición limitada!</h2>
+                    <p>Encuentra el look perfecto para cada ocasión.</p>
+                    <p>Aquí encontrarás lo que necesitas</p>
+                    <p>Busca y encuentra</p>
+                </div>
+            </div>
+            <div class="arbol">
+                <div class="mesa">
+                    <img src="8.jpg">
+                    <h2>Stylish Summer Look!</h2>
+                    <p>Accesorios imprescindibles para el calor.</p>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+    <div class="casa">
+        <div class="cielo">
+            <div class="tren contenedor">
+                <img src="9.jpg" width="20px">
+                <div class="texto-encima">Oferta exclusiva</div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+    <div class="casa">
+        <div class="gato">Let's Make Magic!</div>
+        <div class="carro">
+            <div class="luz">
+                <img src="11.webp">
+                <h4>Summer Collection</h4>
+                <p>Detalles que marcan la diferencia en tu vestimenta.</p>
+            </div>
+            <div class="luz">
+                <img src="12.webp">
+                <h4>Urban Vibe</h4>
+                <p>La comodidad se une a las tendencias de la ciudad.</p>
+            </div>
+            <div class="luz">
+                <img src="13.webp">
+                <h4>Casual Friday</h4>
+                <p>Piezas versátiles para un fin de semana elegante.</p>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+    <div class="casa">
+        <div class="carro">
+            <div class="arbol">
+                <div class="mesa">
+                    <img src="14.webp">
+                    <h2>We Know Everything About Style & Modern Collections</h2>
+                </div>
+            </div>
+            <div class="arbol">
+                <div class="mesa">
+                    <img src="15.webp">
+                    <h2>Únete a la Tendencia</h2>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+    <div class="casa">
+        <div class="gato">What Our Clients Say About Us?</div>
+        <div class="carro">
+            <div class="luna">
+                <img src="a.jpg">
+                <p>"La mejor calidad y servicio al cliente. ¡Mi tienda favorita!"</p>
+                María R.
+            </div>
+            <div class="luna">
+                <img src="b.jpg">
+                <p>"Prendas duraderas y siempre a la moda. ¡Totalmente recomendado!"</p>
+                Juan P.
+            </div>
+            <div class="luna">
+                <img src="c.jpg">
+                <p>"El proceso de compra fue muy sencillo y la entrega rápida."</p>
+                Sofía L.
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+
+    <div class="casa">
+        <div class="gato">Cloth With Discount</div>
+        <div class="carro">
+            <div class="flor">
+                <img src="16.jpg">
+                <h3>Red Blazer</h3>
+                <p>50% OFF</p>
+            </div>
+            <div class="flor">
+                <img src="17.webp">
+                <h3>Black Trousers</h3>
+                <p>30% OFF</p>
+            </div>
+            <div class="flor">
+                <img src="18.jpg">
+                <h3>Wool Beanie</h3>
+                <p>20% OFF</p>
+            </div>
+            <div class="flor">
+                <img src="19.jpeg">
+                <h3>Winter Cap</h3>
+                <p>15% OFF</p>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+    <div class="casa">
+        <div class="carro">
+            <div class="arbol">
+                <div class="mesa">
+                    <img src="20.jpg">
+                    <h2>Great Look With Our Stylist</h2>
+                    <p>Agenda una sesión personalizada hoy mismo.</p>
+                </div>
+            </div>
+            <div class="arbol">
+                <div class="mesa">
+                    <img src="21.webp">
+                    <h2>Find Gorgeous Dress</h2>
+                    <p>Vestidos únicos para eventos especiales.</p>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+    <div class="casa">
+        <div class="gato">Our Latest News!</div>
+        <div class="carro">
+            <div class="luna">
+                <img src="22.jpg">
+                <h4>Viaje a París</h4>
+                <p>Nuestra inspiración para la colección de otoño/invierno.</p>
+            </div>
+            <div class="luna">
+                <img src="23.jpg">
+                <h4>Entrevista Exclusiva</h4>
+                <p>Conoce al fundador de la marca y su visión.</p>
+            </div>
+            <div class="luna">
+                <img src="24.webp">
+                <h4>Guía de Estilo</h4>
+                <p>Cómo combinar básicos con elegancia.</p>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+    <div class="casa">
+        <div class="carro">
+            <div class="icono"></div>
+            <div class="icono"></div>
+            <div class="icono"></div>
+            <div class="icono"></div>
+            <div class="icono"></div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+    <div class="casa" style="background-color: black; color: white;">
+        <div class="pie">
+            <div class="pie_columna">
+                <h4>Newsletter</h4>
+                Tu email
+            </div>
+            <div class="pie_columna1">
+                <h4>Newsletter</h4>
+                Tu Facebook
+            </div>
+            <div class="pie_columna2">
+                <h4>Newsletter</h4>
+                Tu dirección
+            </div>
+            <div class="pie_columna3">
+                <h4>Newsletter</h4>
+                Tu número telefónico 
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+
+</body>
+</html>
